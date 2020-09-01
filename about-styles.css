@@ -1,0 +1,114 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 5% 50% 25%;
+        height: 100vh;
+    }
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+        }
+    
+        .topnav #myLinks {
+        display: none;
+        }
+    
+        .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        }
+    
+        .topnav a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        }
+    
+        .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+        }
+    
+        .active {
+        background-color: #4CAF50;
+        color: white;
+        }
+        /*up to here */
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 5% 50% 25%;
+        height: none;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 5% 50% 25%;
+        height: none;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 5% 50% 25%;
+        height: none;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 5% 50% 25%;
+        height: 100vh;
+        overflow: scroll;
+    }
+    
+    .header {
+        background-color: #7392B7;
+    }
+    .navigation {
+        background-color: blue;
+    }
+    .navigation > a {
+        color: white;
+        font-size: 25px;
+    }
+    .main {
+        background-color: cadetblue;
+        overflow: scroll;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 5px;
+        height: auto;
+        
+    }
+        .container {
+            background-color: burlywood;
+            border-radius: 5px;
+        }
+        
+    .footer {
+        background-color: chocolate;
+    }
