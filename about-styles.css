@@ -6,9 +6,10 @@
         grid-template-rows: 20% 5% 50% 25%;
         height: 100vh;
     }
+    /*Copied over from W3 */
     .topnav {
-        overflow: hidden;
-        background-color: #333;
+        display: block;
+        background-color: darkslategrey;
         position: relative;
         }
     
@@ -20,7 +21,7 @@
         color: white;
         padding: 14px 16px;
         text-decoration: none;
-        font-size: 17px;
+        font-size: 1rem;
         display: block;
         }
     
@@ -28,7 +29,7 @@
         background: black;
         display: block;
         position: absolute;
-        right: 0;
+        left: 0;
         top: 0;
         }
     
@@ -38,10 +39,14 @@
         }
     
         .active {
-        background-color: #4CAF50;
+        background-color: darkslategrey;
         color: white;
+        float: right;
         }
         /*up to here */
+        .navigation {
+            background-color: darkslategrey;
+        }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -77,9 +82,8 @@
         padding: 0;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 20% 5% 50% 25%;
+        grid-template-rows: 20% 5% 60% 25%;
         height: 100vh;
-        overflow: scroll;
     }
     
     .header {
@@ -98,6 +102,7 @@
     }
     .wrapper {
         display: grid;
+        padding: 25px;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-gap: 5px;
