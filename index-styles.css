@@ -7,6 +7,7 @@
         grid-template-columns: 1fr;
         grid-template-rows: 10% 5% 85%;
         height: 100vh;
+        width: 100vw;
     }
     .topnav-desktop {
         display: none;
@@ -56,6 +57,12 @@
         font-size: 2rem;
         font-style: italic;
     }
+    .header #webLogo {
+        display: none;
+    }
+    .header #mobileLogo {
+        display: block;
+    }
     .navigation {
         background-color: darkslategrey;
     }
@@ -73,6 +80,7 @@
     .responsive-iframe {
         margin-left: 0;
         margin-right: 0;
+        width: 100vw;
     }
     .footer {
         background-color: brown;
@@ -115,10 +123,11 @@
         padding: 0;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 20% 5% 75%;
+        grid-template-rows: 22% 5% 73%;
         height: 100vh;
         width: 100vw;
         overflow: scroll;
+        font-family: 'Bree Serif', serif;
     }
     .topnav-mobile {
         display: none;
@@ -130,14 +139,28 @@
         display: none;
     }
     .header {
-        background-color: #7392B7;
-        display: block;
+        background-color: #999999;
+        width: 100%;
         padding-top: 5px;
-        padding-left: 5px;
-        overflow: scroll;
+        padding-left: 15px;
+        font-size: 6rem;
+        text-decoration: underline;
+        position: relative;
+    }
+    img {
+        float: left;
+    }
+    #webLogo {
+        display: block;
+    }
+    #mobileLogo {
+        display: none;
     }
     .navigation {
-        background-color: #7392B7;
+        background-color: #999999;
+        padding-top: 10px;
+        position: sticky;
+        top: 0;
     }
     #myLinks {
         text-align: center;
@@ -149,8 +172,24 @@
         text-decoration: none;
     }
     .main-container {
-        background-color: blueviolet;
+        background-color: #666666;
         overflow: scroll;
+    }
+    h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    iframe {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main-wrapper > p {
+        text-align: center;
+        font-size: 1.5rem
     }
     .main-wrapper {
         padding-left: 10px;
