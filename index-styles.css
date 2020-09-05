@@ -2,12 +2,13 @@
 @media only screen and (max-width: 600px) {
     body {
         display: grid;
-        margin: 0;
+        margin: 0px;
         padding: 0;
         grid-template-columns: 1fr;
-        grid-template-rows: 20% 5% 75%;
-        height: 100vh;
+        grid-template-rows: 12% 5% 83%;
+        height: 100%;
         width: 100%;
+        font-family: 'Bree Serif', serif;
     }
     .topnav-desktop {
         display: none;
@@ -16,7 +17,7 @@
     /*Copied over from W3 */
     .topnav-mobile {
     display: block;
-    background-color: darkslategrey;
+    background-color: darkslateblue;
     position: relative;
     }
 
@@ -51,18 +52,12 @@
     float: right;
     }
     /*up to here */
-    
     .header {
         background-color: #999999;
-        font-size: 10px;
-        font-style: italic;
-        display: inline;
+        font-size: 1.5rem;
     }
-    .header #webLogo {
-        display: none;
-    }
-    .header #mobileLogo {
-        display: block;
+    img {
+        float: left;
     }
     .navigation {
         background-color: #999999;
@@ -70,9 +65,15 @@
     .navigation > a {
         color: white;
     }
+    .main-container {
+        margin: 0px;
+        padding: 0px;
+    }
     .main-wrapper {
+        padding: 5px;
         background-color: #666666;
         overflow: scroll;
+        float: left;
     }
     .main-wrapper > h1 {
         font-size: 2rem;
@@ -84,7 +85,7 @@
         width: 100vw;
     }
     .footer {
-        background-color: brown;
+        background-color: gray;
         position: bottom;
         bottom: 0;
         width: 100vw;
@@ -93,39 +94,103 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     body {
+        margin: 0;
+        padding: 0;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 20% 5% 60% 15%;
-        height: none;
+        grid-template-rows: 9% 6% 85%;
+        height: 100%;
+        width: 100%;
+        overflow: scroll;
+        font-family: 'Bree Serif', serif;
+    }
+    .topnav-mobile {
+        display: none;
+    }
+    .topnav-desktop {
+        display: block;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    .header {
+        background-color: #999999;
+        width: 100%;
+        padding-top: 5px;
+        padding-left: 15px;
+        font-size: 3rem;
+        text-decoration: underline;
+    }
+    img {
+        float: left;
+    }
+    #webLogo {
+        display: block;
+    }
+    #mobileLogo {
+        display: none;
+    }
+    .navigation {
+        background-color: #999999;
+        padding-top: 10px;
+    }
+    #myLinks {
+        text-align: center;
+    }
+    #myLinks > a {
+        color: white;
+        font-size: 1.5rem;
+        margin: 3px;
+        text-decoration: none;
+    }
+    #myLinks > a:hover {
+        text-decoration-line: underline;
+    }
+    .main-container {
+        background-color: #666666;
+        overflow: scroll;
+        height: 100%;
+        width: 100vw;
+        padding: 5px;
+    }
+    .main-wrapper {
+        padding-left: 10px;
+    }
+    .main-wrapper > p {
+        text-align: center;
+        font-size: 1.5rem
+    }
+    h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    iframe {
+        display: block;
+        float: middle;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        height: auto;
+    }
+    .footer {
+        background-color: darkgray;
+        position: bottom;
+        bottom: 0;
+        width: 100vw;
     }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     body {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 20% 5% 60% 15%;
-        height: none;
-    }
-}
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    body {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 20% 5% 60% 15%;
-        height: none;
-    }
-}
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    body {
         margin: 0;
         padding: 0;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 22% 5% 73%;
-        height: 100vh;
+        grid-template-rows: 9% 6% 85%;
+        height: 100%;
         width: 100vw;
         overflow: scroll;
         font-family: 'Bree Serif', serif;
@@ -169,9 +234,14 @@
         margin: 3px;
         text-decoration: none;
     }
+    #myLinks > a:hover {
+        text-decoration-line: underline;
+    }
     .main-container {
         background-color: #666666;
         overflow: scroll;
+        height: 100%;
+        padding: 5px;
     }
     h1 {
         text-align: center;
@@ -193,9 +263,184 @@
         padding-left: 10px;
     }
     .footer {
-        background-color: brown;
+        background-color: darkgray;
         position: bottom;
         bottom: 0;
         width: 100vw;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 16% 5% 79%;
+        height: 100%;
+        width: 100vw;
+        overflow: scroll;
+        font-family: 'Bree Serif', serif;
+    }
+    .topnav-mobile {
+        display: none;
+    }
+    .topnav-desktop {
+        display: block;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    .header {
+        background-color: #999999;
+        width: 100%;
+        padding-top: 5px;
+        padding-left: 15px;
+        font-size: 4rem;
+        text-decoration: underline;
+    }
+    img {
+        float: left;
+    }
+    #webLogo {
+        display: block;
+    }
+    #mobileLogo {
+        display: none;
+    }
+    .navigation {
+        background-color: #999999;
+        padding-top: 10px;
+    }
+    #myLinks {
+        text-align: center;
+    }
+    #myLinks > a {
+        color: white;
+        font-size: 1.5rem;
+        margin: 3px;
+        text-decoration: none;
+    }
+    #myLinks > a:hover {
+        text-decoration-line: underline;
+    }
+    .main-container {
+        background-color: #666666;
+        overflow: hidden;
+        height: 100%;
+        padding: 5px;
+    }
+    h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    iframe {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main-wrapper > p {
+        text-align: center;
+        font-size: 1.5rem
+    }
+    .main-wrapper {
+        padding-left: 10px;
+    }
+    .footer {
+        background-color: darkgray;
+        position: bottom;
+        bottom: 0;
+        width: 100vw;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 18% 5% 77%;
+        height: 100%;
+        width: 100%;
+        overflow: scroll;
+        font-family: 'Bree Serif', serif;
+    }
+    .topnav-mobile {
+        display: none;
+    }
+    .topnav-desktop {
+        display: block;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    .header {
+        background-color: #999999;
+        width: 100%;
+        padding-top: 5px;
+        padding-left: 15px;
+        font-size: 5rem;
+        text-decoration: underline;
+    }
+    img {
+        float: left;
+    }
+    #webLogo {
+        display: block;
+    }
+    #mobileLogo {
+        display: none;
+    }
+    .navigation {
+        background-color: #999999;
+        padding-top: 10px;
+        margin: 0px;
+    }
+    #myLinks {
+        text-align: center;
+    }
+    #myLinks > a {
+        color: white;
+        font-size: 1.5rem;
+        margin: 3px;
+        text-decoration: none;
+    }
+    #myLinks > a:hover {
+        text-decoration-line: underline;
+    }
+    .main-container {
+        background-color: #666666;
+        overflow: scroll;
+        height: 100%;
+        min-width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+
+    iframe {
+       
+    }
+    .main-wrapper > p {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    
+    .footer {
+        background-color: darkgray;
+        position: bottom;
+        bottom: 0;
+        width: 100%;
+        padding: 5px;
     }
 }
