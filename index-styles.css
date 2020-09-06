@@ -13,7 +13,9 @@
     .topnav-desktop {
         display: none;
     }
-    
+    ::-webkit-scrollbar {
+        display: none;
+    }
     /*Copied over from W3 */
     .topnav-mobile {
     display: block;
@@ -67,10 +69,9 @@
     }
     .main-container {
         margin: 0px;
-        padding: 0px;
+        padding-right: 5px;
     }
     .main-wrapper {
-        padding: 5px;
         background-color: #666666;
         overflow: scroll;
         float: left;
@@ -151,7 +152,7 @@
         overflow: scroll;
         height: 100%;
         width: 100vw;
-        padding: 5px;
+        padding-right: 5px; 
     }
     .main-wrapper {
         padding-left: 10px;
@@ -241,7 +242,7 @@
         background-color: #666666;
         overflow: scroll;
         height: 100%;
-        padding: 5px;
+        padding-right: 5px;
     }
     h1 {
         text-align: center;
@@ -328,7 +329,7 @@
         background-color: #666666;
         overflow: hidden;
         height: 100%;
-        padding: 5px;
+        padding-right: 5px;
     }
     h1 {
         text-align: center;
@@ -359,8 +360,6 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     body {
-        margin: 0;
-        padding: 0;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 18% 5% 77%;
@@ -381,8 +380,10 @@
     .header {
         background-color: #999999;
         width: 100%;
+        /*
         padding-top: 5px;
         padding-left: 15px;
+        */
         font-size: 5rem;
         text-decoration: underline;
     }
@@ -397,7 +398,7 @@
     }
     .navigation {
         background-color: #999999;
-        padding-top: 10px;
+        /* padding-top: 10px; */
         margin: 0px;
     }
     #myLinks {
@@ -417,8 +418,8 @@
         overflow: scroll;
         height: 100%;
         min-width: 100%;
-        padding-left: 50px;
-        padding-right: 50px;
+        margin: 0px;
+        padding: 0px;
     }
     h1 {
         text-align: center;
@@ -429,7 +430,7 @@
     }
 
     iframe {
-       
+       width: auto;
     }
     .main-wrapper > p {
         text-align: center;
@@ -441,6 +442,6 @@
         position: bottom;
         bottom: 0;
         width: 100%;
-        padding: 5px;
+        /* padding: 5px; */
     }
 }
