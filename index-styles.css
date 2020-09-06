@@ -6,6 +6,7 @@
         padding: 0;
         grid-template-columns: 1fr;
         grid-template-rows: 12% 5% 83%;
+        overflow-x: hidden;
         height: 100%;
         width: 100%;
         font-family: 'Bree Serif', serif;
@@ -361,45 +362,46 @@
 @media only screen and (min-width: 1200px) {
     body {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
         grid-template-rows: 18% 5% 77%;
         height: 100%;
         width: 100%;
         overflow: scroll;
+        overflow-x: hidden;
         font-family: 'Bree Serif', serif;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    .header {
+        background-color: aqua;
+        /*
+        background-color: #999999;
+        width: 100%;
+
+        margin: 0px;
+        padding: 0px;
+        
+        padding-top: 5px;
+        padding-left: 15px;
+        
+        font-size: 5rem;
+        text-decoration: underline;
+        */
+    }
+    img {
+        float: left;
+    }
+    .navigation {
+        background-color: blue;
+        /* padding-top: 10px; */
+
     }
     .topnav-mobile {
         display: none;
     }
     .topnav-desktop {
         display: block;
-    }
-    ::-webkit-scrollbar {
-        display: none;
-    }
-    .header {
-        background-color: #999999;
-        width: 100%;
-        /*
-        padding-top: 5px;
-        padding-left: 15px;
-        */
-        font-size: 5rem;
-        text-decoration: underline;
-    }
-    img {
-        float: left;
-    }
-    #webLogo {
-        display: block;
-    }
-    #mobileLogo {
-        display: none;
-    }
-    .navigation {
-        background-color: #999999;
-        /* padding-top: 10px; */
-        margin: 0px;
     }
     #myLinks {
         text-align: center;
@@ -414,12 +416,23 @@
         text-decoration-line: underline;
     }
     .main-container {
-        background-color: #666666;
-        overflow: scroll;
-        height: 100%;
-        min-width: 100%;
+       overflow: scroll;
+       width: 100%;
+    }
+    .main-wrapper {
         margin: 0px;
-        padding: 0px;
+        /*
+        padding-left: 15px;
+        padding-right: 15px;
+        */
+        height: 100%;
+        /*
+        width: 90%;
+        */
+    }
+    .main-wrapper > p {
+        text-align: left;
+        font-size: 1.5rem;
     }
     h1 {
         text-align: center;
@@ -432,16 +445,10 @@
     iframe {
        width: auto;
     }
-    .main-wrapper > p {
-        text-align: center;
-        font-size: 1.5rem;
-    }
-    
     .footer {
         background-color: darkgray;
         position: bottom;
         bottom: 0;
         width: 100%;
-        /* padding: 5px; */
     }
 }
