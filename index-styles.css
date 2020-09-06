@@ -1,3 +1,86 @@
+/*main css */
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 18% 5% 77%;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: scroll;
+    overflow-x: hidden;
+    font-family: 'Bree Serif', serif;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.header {
+    background-color: aqua;
+    background-color: #999999;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 5px;
+    font-size: 5rem;
+    text-decoration: underline;
+}
+.header > img {
+    float: left;
+}
+.navigation {
+    background-color: blue;
+    padding-top: 10px;
+}
+#myLinks {
+    text-align: center;
+}
+#myLinks > a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 3px;
+    text-decoration: none;
+}
+#myLinks > a:hover {
+    text-decoration-line: underline;
+}
+.main-container {
+   display: block;
+   height: 100%;
+}
+.main-wrapper {
+    background-color: green;
+    height: 100%;
+}
+.main-wrapper > p {
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 15px;
+}
+.main-wrapper > h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0px;
+    padding: 0px;
+}
+.main-wrapper > h2 {
+    font-size: 2rem;
+    padding: 10px;
+}
+.footer {
+    background-color: darkgray;
+    position: bottom;
+    bottom: 0;
+    margin: 0px;
+    padding-bottom: 50px;
+}
+.footer > h3 {  
+    margin: 0px;
+    padding: 10px;
+}
+.footer > a {  
+    margin: 0px;
+    padding-left: 10px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     body {
@@ -5,7 +88,7 @@
         margin: 0px;
         padding: 0;
         grid-template-columns: 1fr;
-        grid-template-rows: 12% 5% 83%;
+        grid-template-rows: 7% 5% 88%;
         overflow-x: hidden;
         height: 100%;
         width: 100%;
@@ -29,7 +112,7 @@
     }
 
     .topnav-mobile a {
-    color: white;
+    color: black;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 1rem;
@@ -37,15 +120,17 @@
     }
 
     .topnav-mobile a.icon {
-    background: black;
+    background: white;
     display: block;
     position: absolute;
+    border-radius: 5px;
     left: 0;
     top: 0;
     }
 
     .topnav-mobile a:hover {
     background-color: #ddd;
+    border-radius: 5px;
     color: black;
     }
 
@@ -57,10 +142,12 @@
     /*up to here */
     .header {
         background-color: #999999;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     img {
-        float: left;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;        
     }
     .navigation {
         background-color: #999999;
@@ -68,14 +155,11 @@
     .navigation > a {
         color: white;
     }
-    .main-container {
-        margin: 0px;
-        padding-right: 5px;
-    }
     .main-wrapper {
         background-color: #666666;
         overflow: scroll;
         float: left;
+        width: 100%;
     }
     .main-wrapper > h1 {
         font-size: 2rem;
@@ -96,106 +180,22 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     body {
-        margin: 0;
-        padding: 0;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 9% 6% 85%;
-        height: 100%;
-        width: 100%;
-        overflow: scroll;
-        font-family: 'Bree Serif', serif;
+        grid-template-rows: 9% 5% 77%;
+    }
+    .header > p {
+        font-size: 3rem;
     }
     .topnav-mobile {
         display: none;
     }
     .topnav-desktop {
         display: block;
-    }
-    ::-webkit-scrollbar {
-        display: none;
-    }
-    .header {
-        background-color: #999999;
-        width: 100%;
-        padding-top: 5px;
-        padding-left: 15px;
-        font-size: 3rem;
-        text-decoration: underline;
-    }
-    img {
-        float: left;
-    }
-    #webLogo {
-        display: block;
-    }
-    #mobileLogo {
-        display: none;
-    }
-    .navigation {
-        background-color: #999999;
-        padding-top: 10px;
-    }
-    #myLinks {
-        text-align: center;
-    }
-    #myLinks > a {
-        color: white;
-        font-size: 1.5rem;
-        margin: 3px;
-        text-decoration: none;
-    }
-    #myLinks > a:hover {
-        text-decoration-line: underline;
-    }
-    .main-container {
-        background-color: #666666;
-        overflow: scroll;
-        height: 100%;
-        width: 100vw;
-        padding-right: 5px; 
-    }
-    .main-wrapper {
-        padding-left: 10px;
-    }
-    .main-wrapper > p {
-        text-align: center;
-        font-size: 1.5rem
-    }
-    h1 {
-        text-align: center;
-        font-size: 3rem;
-    }
-    h2 {
-        font-size: 2rem;
-    }
-    iframe {
-        display: block;
-        float: middle;
-        margin-left: auto;
-        margin-right: auto;
-        width: auto;
-        height: auto;
-    }
-    .footer {
-        background-color: darkgray;
-        position: bottom;
-        bottom: 0;
-        width: 100vw;
     }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     body {
-        margin: 0;
-        padding: 0;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 9% 6% 85%;
-        height: 100%;
-        width: 100vw;
-        overflow: scroll;
-        font-family: 'Bree Serif', serif;
+        grid-template-rows: 10% 6% 84%;
     }
     .topnav-mobile {
         display: none;
@@ -203,252 +203,28 @@
     .topnav-desktop {
         display: block;
     }
-    ::-webkit-scrollbar {
-        display: none;
-    }
-    .header {
-        background-color: #999999;
-        width: 100%;
-        padding-top: 5px;
-        padding-left: 15px;
+    .header > p {
         font-size: 3rem;
-        text-decoration: underline;
-    }
-    img {
-        float: left;
-    }
-    #webLogo {
-        display: block;
-    }
-    #mobileLogo {
-        display: none;
-    }
-    .navigation {
-        background-color: #999999;
-        padding-top: 10px;
-    }
-    #myLinks {
-        text-align: center;
-    }
-    #myLinks > a {
-        color: white;
-        font-size: 1.5rem;
-        margin: 3px;
-        text-decoration: none;
-    }
-    #myLinks > a:hover {
-        text-decoration-line: underline;
-    }
-    .main-container {
-        background-color: #666666;
-        overflow: scroll;
-        height: 100%;
-        padding-right: 5px;
-    }
-    h1 {
-        text-align: center;
-        font-size: 3rem;
-    }
-    h2 {
-        font-size: 2rem;
-    }
-    iframe {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .main-wrapper > p {
-        text-align: center;
-        font-size: 1.5rem
-    }
-    .main-wrapper {
-        padding-left: 10px;
-    }
-    .footer {
-        background-color: darkgray;
-        position: bottom;
-        bottom: 0;
-        width: 100vw;
     }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    body {
-        margin: 0;
-        padding: 0;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 16% 5% 79%;
-        height: 100%;
-        width: 100vw;
-        overflow: scroll;
-        font-family: 'Bree Serif', serif;
-    }
     .topnav-mobile {
         display: none;
     }
     .topnav-desktop {
         display: block;
-    }
-    ::-webkit-scrollbar {
-        display: none;
-    }
-    .header {
-        background-color: #999999;
-        width: 100%;
-        padding-top: 5px;
-        padding-left: 15px;
-        font-size: 4rem;
-        text-decoration: underline;
-    }
-    img {
-        float: left;
-    }
-    #webLogo {
-        display: block;
-    }
-    #mobileLogo {
-        display: none;
-    }
-    .navigation {
-        background-color: #999999;
-        padding-top: 10px;
-    }
-    #myLinks {
-        text-align: center;
-    }
-    #myLinks > a {
-        color: white;
-        font-size: 1.5rem;
-        margin: 3px;
-        text-decoration: none;
-    }
-    #myLinks > a:hover {
-        text-decoration-line: underline;
-    }
-    .main-container {
-        background-color: #666666;
-        overflow: hidden;
-        height: 100%;
-        padding-right: 5px;
-    }
-    h1 {
-        text-align: center;
-        font-size: 3rem;
-    }
-    h2 {
-        font-size: 2rem;
-    }
-    iframe {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .main-wrapper > p {
-        text-align: center;
-        font-size: 1.5rem
-    }
-    .main-wrapper {
-        padding-left: 10px;
-    }
-    .footer {
-        background-color: darkgray;
-        position: bottom;
-        bottom: 0;
-        width: 100vw;
     }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) { 
     body {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 18% 5% 77%;
-        height: 100%;
-        width: 100%;
-        overflow: scroll;
-        overflow-x: hidden;
-        font-family: 'Bree Serif', serif;
-    }
-    ::-webkit-scrollbar {
-        display: none;
-    }
-    .header {
-        background-color: aqua;
-        /*
-        background-color: #999999;
-        width: 100%;
-
-        margin: 0px;
-        padding: 0px;
-        
-        padding-top: 5px;
-        padding-left: 15px;
-        
-        font-size: 5rem;
-        text-decoration: underline;
-        */
-    }
-    img {
-        float: left;
-    }
-    .navigation {
-        background-color: blue;
-        /* padding-top: 10px; */
-
-    }
+        grid-template-rows: 11% 5% 78%;
+    } 
     .topnav-mobile {
         display: none;
     }
     .topnav-desktop {
         display: block;
-    }
-    #myLinks {
-        text-align: center;
-    }
-    #myLinks > a {
-        color: white;
-        font-size: 1.5rem;
-        margin: 3px;
-        text-decoration: none;
-    }
-    #myLinks > a:hover {
-        text-decoration-line: underline;
-    }
-    .main-container {
-       overflow: scroll;
-       width: 100%;
-    }
-    .main-wrapper {
-        margin: 0px;
-        /*
-        padding-left: 15px;
-        padding-right: 15px;
-        */
-        height: 100%;
-        /*
-        width: 90%;
-        */
-    }
-    .main-wrapper > p {
-        text-align: left;
-        font-size: 1.5rem;
-    }
-    h1 {
-        text-align: center;
-        font-size: 3rem;
-    }
-    h2 {
-        font-size: 2rem;
-    }
-
-    iframe {
-       width: auto;
-    }
-    .footer {
-        background-color: darkgray;
-        position: bottom;
-        bottom: 0;
-        width: 100%;
     }
 }
