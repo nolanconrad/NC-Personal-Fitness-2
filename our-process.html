@@ -2,16 +2,35 @@
 <html> 
     <head>
         <link rel="stylesheet" href="our-process-styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="header">
+            <img 
+                srcset="NCPersonalFitnessWebpageLogo(100x100).png 100w, NCPersonalFitnessWebpageLogo(50x50).png 50w" sizes="(max-width: 600px) 50px, 100px" alt="NC Personal Fitness Logo">
+            
             <p>NC Personal Fitness</p>
         </div>
+
         <div class="navigation">
-            <div class="topnav">
-                <a href="#home" class="active">Logo</a>
+            <div class="topnav-mobile">
+                <div id="myLinks">
+                    <br> <br> <br>
+                    <a href="index.html"> HOME  </a> 
+                    <a href="about.html"> ABOUT </a>
+                    <a href="our-process.html"> OUR PROCESS </a>
+                    <a href="pricing.html"> PRICING & PACKAGES  </a>
+                    <a href="payment.html"> PAYMENT </a>
+                    <a href="frequently-asked-questions.html"> FAQ </a>
+                    <a href="get-started.html"> LET'S GET STARTED! </a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a> 
+            </div>
+            <div class="topnav-desktop">
                 <div id="myLinks">
                     <a href="index.html"> HOME  </a> 
                     <a href="about.html"> ABOUT </a>
@@ -19,28 +38,33 @@
                     <a href="pricing.html"> PRICING & PACKAGES  </a>
                     <a href="payment.html"> PAYMENT </a>
                     <a href="frequently-asked-questions.html"> FAQ </a>
-                    <a style="text-decoration: underline; font-weight: bold;" href="get-started.html"> LET'S GET STARTED! </a>
-                </div>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i class="fa fa-bars"></i>
-                </a>
-              </div>
+                    <a href="get-started.html"> LET'S GET STARTED! </a>
+                </div> 
+            </div>
         </div>
-        <div class="main">
-            <h1>Our Process</h1>
-            <h2>How your workout is created:</h2>
-            <p> Creating your personalized plan is easy with our three step process!</p>
-                    <ol>
-                        <li> Remote Consultaion</li>
-                                <p> Over a call, text, or email, you will share with one of our trainers your fitness goals, timeframes, where you plan to exercise, and any equipment you already have.</p>
-                        <li> Plan is custom curated </li>
-                                <p> After your consultation, your trainer will begin to map out your plan and get to work preparing your first workout.  </p>
-                        <li> Wokrout(s) are delivered to you!</li>
-                                <p> For most our plans, it works better for both if we send your workouts one at a time, this allows for us to get some feedback on how you were able to handle each exercise. By doing it this way, we can better desing your next workout to keep you progressing throughout the full length of your plan.  </p>
-                    </ol>
-        </div>
-        <div class="footer">
+        <div class="main-container">
+            <div class="main-wrapper">
+                <h1>Our Process</h1>
+                <h2>How your workout is created:</h2>
+                <p> Creating your personalized plan is easy with our three step process!</p>
+                        <ol>
+                            <li> Remote Consultaion</li>
+                                    <p> Over a call, text, or email, you will share with one of our trainers your fitness goals, timeframes, where you plan to exercise, and any equipment you already have.</p>
+                            <li> Plan is custom curated </li>
+                                    <p> After your consultation, your trainer will begin to map out your plan and get to work preparing your first workout.  </p>
+                            <li> Wokrout(s) are delivered to you!</li>
+                                    <p> For most our plans, it works better for both if we send your workouts one at a time, this allows for us to get some feedback on how you were able to handle each exercise. By doing it this way, we can better desing your next workout to keep you progressing throughout the full length of your plan.  </p>
+                        </ol>
+            </div>
 
+            <div class="footer">
+                <h3>Follow Us on Social Media!</h3>
+                <a href="instagram.com">INSTAGRAM</a>
+                <h3>Follow Us on Social Media!</h3>
+                <a href="instagram.com">INSTAGRAM</a>
+                <h3>Follow Us on Social Media!</h3>
+                <a href="instagram.com">INSTAGRAM</a>
+            </div>
         </div>
         <script src="our-process-script.js"></script>
     </body>

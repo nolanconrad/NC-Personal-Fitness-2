@@ -2,16 +2,35 @@
 <html> 
     <head>
         <link rel="stylesheet" href="payment-styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="header">
+            <img 
+                srcset="NCPersonalFitnessWebpageLogo(100x100).png 100w, NCPersonalFitnessWebpageLogo(50x50).png 50w" sizes="(max-width: 600px) 50px, 100px" alt="NC Personal Fitness Logo">
+            
             <p>NC Personal Fitness</p>
         </div>
+
         <div class="navigation">
-            <div class="topnav">
-                <a href="#home" class="active">Logo</a>
+            <div class="topnav-mobile">
+                <div id="myLinks">
+                    <br> <br> <br>
+                    <a href="index.html"> HOME  </a> 
+                    <a href="about.html"> ABOUT </a>
+                    <a href="our-process.html"> OUR PROCESS </a>
+                    <a href="pricing.html"> PRICING & PACKAGES  </a>
+                    <a href="payment.html"> PAYMENT </a>
+                    <a href="frequently-asked-questions.html"> FAQ </a>
+                    <a href="get-started.html"> LET'S GET STARTED! </a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a> 
+            </div>
+            <div class="topnav-desktop">
                 <div id="myLinks">
                     <a href="index.html"> HOME  </a> 
                     <a href="about.html"> ABOUT </a>
@@ -19,25 +38,29 @@
                     <a href="pricing.html"> PRICING & PACKAGES  </a>
                     <a href="payment.html"> PAYMENT </a>
                     <a href="frequently-asked-questions.html"> FAQ </a>
-                    <a style="text-decoration: underline; font-weight: bold;" href="get-started.html"> LET'S GET STARTED! </a>
-                </div>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i class="fa fa-bars"></i>
-                </a>
-              </div>
-        </div>
-        <div class="main">
-            <h1> Pricing </h1>
-            <div> 
-                <h2> Payment </h2>
-                <p> Currently, NC Personal Fitness can only accept payment through PayPal. We are very flexible about payment, and can prorate a plan on a per workout basis if requested. While flexible, we must have a downpayment of at least 50% of the total cost of the plan, prior to the delivery of your first paid workout. </p> 
-                <br>
-                <h2>Money Back Guarentee</h2>
-                <p>At NC Fitness, we like to do things right. We stand behind our workouts and their amazing quality, but if you feel otherwise, we will give you 100% of your money back, no questions asked. </p>
+                    <a href="get-started.html"> LET'S GET STARTED! </a>
+                </div> 
             </div>
         </div>
-        <div class="footer">
-
+        <div class="main-container">
+                <div class="main-wrapper">
+                    <h1> Pricing </h1>
+                    <div> 
+                        <h2> Payment </h2>
+                        <p> Currently, NC Personal Fitness can only accept payment through PayPal. We are very flexible about payment, and can prorate a plan on a per workout basis if requested. While flexible, we must have a downpayment of at least 50% of the total cost of the plan, prior to the delivery of your first paid workout. </p> 
+                        <br>
+                        <h2>Money Back Guarentee</h2>
+                        <p>At NC Fitness, we like to do things right. We stand behind our workouts and their amazing quality, but if you feel otherwise, we will give you 100% of your money back, no questions asked. </p>
+                    </div>
+                </div>
+            <div class="footer">
+                <h3>Follow Us on Social Media!</h3>
+                <a href="instagram.com">INSTAGRAM</a>
+                <h3>Follow Us on Social Media!</h3>
+                <a href="instagram.com">INSTAGRAM</a>
+                <h3>Follow Us on Social Media!</h3>
+                <a href="instagram.com">INSTAGRAM</a>
+            </div>
         </div>
         <script src="payment-script.js"></script>
     </body>

@@ -1,114 +1,241 @@
+/*main css */
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    /*
+    grid-template-rows: 135px 35px auto;
+    */
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: scroll;
+    overflow-x: hidden;
+    font-family: 'Bree Serif', serif;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.header {
+    display: block;
+    height: 135px;
+    background-color: aqua;
+    background-color: #999999;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 5px;
+    font-size: 5rem;
+    text-decoration: underline;
+}
+.header > img {
+    float: left;
+}
+.navigation {
+    height: 35px;
+    background-color: blue;
+    padding-top: 10px;
+}
+#myLinks {
+    text-align: center;
+}
+#myLinks > a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 3px;
+    text-decoration: none;
+}
+#myLinks > a:hover {
+    text-decoration-line: underline;
+}
+.main-container {
+   display: block;
+   height: 100%;
+}
+.main-wrapper {
+    background-color: green;
+    height: 100%;
+}
+.main-wrapper > p {
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 15px;
+}
+.main-wrapper > h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0px;
+    padding: 0px;
+}
+.main-wrapper > h2 {
+    font-size: 2rem;
+    padding: 10px;
+}
+.iframe-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    display: block;
+}
+.footer {
+    background-color: darkgray;
+    position: bottom;
+    bottom: 0;
+    margin: 0px;
+    padding-bottom: 50px;
+}
+.footer > h3 {  
+    margin: 0px;
+    padding: 10px;
+}
+.footer > a {  
+    margin: 0px;
+    padding-left: 10px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     body {
         display: grid;
+        margin: 0px;
+        padding: 0;
         grid-template-columns: 1fr;
-        grid-template-rows: 20% 5% 50% 25%;
-        height: 100vh;
+        grid-template-rows: 7% 5% 88%;
+        overflow-x: hidden;
+        height: 100%;
+        width: 100%;
+        font-family: 'Bree Serif', serif;
     }
-    .topnav {
-        overflow: hidden;
-        background-color: #333;
-        position: relative;
-        }
-    
-        .topnav #myLinks {
+    .topnav-desktop {
         display: none;
-        }
-    
-        .topnav a {
-        color: white;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    /*Copied over from W3 */
+    .topnav-mobile {
+    display: block;
+    background-color: darkslateblue;
+    position: relative;
+    }
+
+    .topnav-mobile #myLinks {
+    display: none;
+    }
+
+    .topnav-mobile a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+    }
+
+    .topnav-mobile a.icon {
+    background: white;
+    display: block;
+    position: absolute;
+    border-radius: 5px;
+    left: 0;
+    top: 0;
+    }
+
+    .topnav-mobile a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+    color: black;
+    }
+
+    .active {
+    background-color: darkslategrey;
+    color: white;
+    float: right;
+    }
+    /*up to here */
+    .header {
+        background-color: #999999;
+        font-size: 2rem;
+    }
+    img {
         display: block;
-        }
-    
-        .topnav a.icon {
-        background: black;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-        }
-    
-        .topnav a:hover {
-        background-color: #ddd;
-        color: black;
-        }
-    
-        .active {
-        background-color: #4CAF50;
+        margin-left: auto;
+        margin-right: auto;        
+    }
+    .navigation {
+        background-color: #999999;
+    }
+    .navigation > a {
         color: white;
-        }
-        /*up to here */
+    }
+    .main-wrapper {
+        background-color: #666666;
+        overflow: scroll;
+        float: left;
+        width: 100%;
+    }
+    .main-wrapper > h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .responsive-iframe {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100vw;
+    }
+    .footer {
+        background-color: gray;
+        position: bottom;
+        bottom: 0;
+        width: 100vw;
+    }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     body {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 20% 5% 50% 25%;
-        height: none;
+        grid-template-rows: 9% 5% 77%;
+    }
+    .header > p {
+        font-size: 3rem;
+    }
+    .topnav-mobile {
+        display: none;
+    }
+    .topnav-desktop {
+        display: block;
     }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     body {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 20% 5% 50% 25%;
-        height: none;
+        grid-template-rows: 10% 6% 84%;
+    }
+    .topnav-mobile {
+        display: none;
+    }
+    .topnav-desktop {
+        display: block;
+    }
+    .header > p {
+        font-size: 3rem;
     }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    body {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 20% 5% 50% 25%;
-        height: none;
+    .topnav-mobile {
+        display: none;
     }
-    
+    .topnav-desktop {
+        display: block;
+    }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) { 
     body {
-        margin: 0;
-        padding: 0;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 20% 5% 50% 25%;
-        height: 960px;
-        overflow: scroll;
+        grid-template-rows: 11% 5% 78%;
+    } 
+    .topnav-mobile {
+        display: none;
     }
-    .header {
-        background-color: #7392B7;
+    .topnav-desktop {
+        display: block;
     }
-    .navigation {
-        background-color: blue;
-    }
-    .navigation > a {
-        color: white;
-        font-size: 25px;
-    }
-    .main {
-        background-color: cadetblue;
-        overflow: scroll;
-    }
-    .wrapper {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-gap: 5px;
-        height: auto;
-        
-    }
-        .container {
-            background-color: burlywood;
-            border-radius: 5px;
-        }
-        
-    .footer {
-        background-color: chocolate;
-    }
+}

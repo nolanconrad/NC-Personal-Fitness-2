@@ -44,11 +44,9 @@ body {
 }
 .main-container {
    display: block;
-   height: 100%;
 }
 .main-wrapper {
     background-color: green;
-    height: 100%;
 }
 .main-wrapper > p {
     text-align: left;
@@ -83,11 +81,10 @@ body {
     position: bottom;
     bottom: 0;
     margin: 0px;
-    padding-bottom: 50px;
 }
 .footer > h3 {  
     margin: 0px;
-    padding: 10px;
+    padding-left : 10px;
 }
 .footer > a {  
     margin: 0px;
