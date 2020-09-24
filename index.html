@@ -10,8 +10,7 @@
     <body>
         <div class="header">
             <img 
-                srcset="NCPersonalFitnessWebpageLogo(100x100).png 100w, NCPersonalFitnessWebpageLogo(50x50).png 50w" sizes="(max-width: 600px) 50px, 100px" alt="NC Personal Fitness Logo">
-            
+                srcset="NCPersonalFitnessWebpageLogo(100x100).png 100w, NCPersonalFitnessWebpageLogo(50x50).png 50w" sizes="(max-width: 768px) 50px, 100px" alt="NC Personal Fitness Logo">
             <p>NC Personal Fitness</p>
         </div>
 
@@ -52,18 +51,26 @@
                 <p>Our trainers work with you individually to build a custom plan to help you meet your personal fitness goals. Learn more <a href="our-process.html">HERE</a>            
                 <h2>Check us out on YouTube!</h2>
                 <div class="iframe-wrapper"> 
-                    <iframe  src="https://www.youtube-nocookie.com/embed/1XaOnC3Fr3k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe  src="https://www.youtube-nocookie.com/embed/1XaOnC3Fr3k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
                 </div>
+                <br> <br>
             </div>
-            <div class="footer">
-                <h3>Follow Us on Social Media!</h3>
-                <a href="instagram.com">INSTAGRAM</a>
-                <h3>Follow Us on Social Media!</h3>
-                <a href="instagram.com">INSTAGRAM</a>
-                <h3>Follow Us on Social Media!</h3>
-                <a href="instagram.com">INSTAGRAM</a>
-            </div>
+            <br><br>
         </div>  
-        <script src="index-script.js"></script>
+        <div class="footer">
+            <h3>Follow Us on Social Media!</h3>
+            <a href="https://www.instagram.com/ncpersonalfitness/">INSTAGRAM</a>
+            <a href="https://www.facebook.com/ncpersonalfitness">FACEBOOK</a>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                x.style.display = "none";
+                } else {
+                x.style.display = "block";
+                }
+            }
+        </script>
     </body>
 </html>

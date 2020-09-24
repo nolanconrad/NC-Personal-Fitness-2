@@ -10,7 +10,7 @@
     <body>
         <div class="header">
             <img 
-                srcset="NCPersonalFitnessWebpageLogo(100x100).png 100w, NCPersonalFitnessWebpageLogo(50x50).png 50w" sizes="(max-width: 600px) 50px, 100px" alt="NC Personal Fitness Logo">
+                srcset="NCPersonalFitnessWebpageLogo(100x100).png 100w, NCPersonalFitnessWebpageLogo(50x50).png 50w" sizes="(max-width: 768px) 50px, 100px" alt="NC Personal Fitness Logo">
             
             <p>NC Personal Fitness</p>
         </div>
@@ -45,22 +45,29 @@
         </div>
         <div class="main-container">
             <div class="main-wrapper"> 
-                <h2> Ready to get started? </h2>
+                <h1> Ready to start achieving your fitness goals? </h1>
                 <p>Fill out the form below and a trainer will be reach out to you in 24 hours or less!</p>
-                <iframe id="iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSetoNkTIwUI1rbxg-0oIcW6H0aTbVw0seGds5bU0BZBQJv0bg/viewform?embedded=true" width="75%vw" 
-                height="1500px" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" >Loading…</iframe>
+                <div class="iframe-wrapper"> 
+                    <iframe id="iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSetoNkTIwUI1rbxg-0oIcW6H0aTbVw0seGds5bU0BZBQJv0bg/viewform?embedded=true" width="100%" height="500px" frameborder="0" marginheight="0" marginwidth="0" scrolling="yes" >Loading…</iframe>
+                </div>
                 <h2>Need to contact us a little quicker?</h2>
-                <p>951-444-5407 (text or call!) or ncpersonalfitness@gmail.com</p>
-            </div>
-            <div class="footer">
-                <h3>Follow Us on Social Media!</h3>
-                <a href="instagram.com">INSTAGRAM</a>
-                <h3>Follow Us on Social Media!</h3>
-                <a href="instagram.com">INSTAGRAM</a>
-                <h3>Follow Us on Social Media!</h3>
-                <a href="instagram.com">INSTAGRAM</a>
+                <p>You can text or call us at 951-444-5407, or shoot us an email at ncpersonalfitness@gmail.com</p>
             </div>
         </div>
-        <script src="get-started-script.js"></script>
+        <div class="footer">
+            <h3>Follow Us on Social Media!</h3>
+            <a href="https://www.instagram.com/ncpersonalfitness/">INSTAGRAM</a>
+            <a href="https://www.facebook.com/ncpersonalfitness">FACEBOOK</a>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                x.style.display = "none";
+                } else {
+                x.style.display = "block";
+                }
+            }
+        </script>
     </body>
 </html>
