@@ -156,6 +156,7 @@
         background-color: #4EA5D9;
         padding-left: 15vw;
         padding-right: 15vw;
+        overflow: scroll;
     }
     .main-wrapper h1 {
         font-size: 3rem;
