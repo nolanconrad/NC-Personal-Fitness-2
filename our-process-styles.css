@@ -52,7 +52,7 @@ body {}
     }
     .footer {
         display: inline-block;
-        float: left;
+        float: middle;
         grid-row: 4;
         background-color: #224870;
         padding: 0px;
